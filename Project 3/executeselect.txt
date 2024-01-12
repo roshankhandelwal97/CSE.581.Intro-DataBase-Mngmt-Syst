@@ -1,0 +1,11 @@
+EXEC sp_GetAllCoursesByDepartment @DepartmentID = 1; 
+EXEC sp_UpdateAnnualSalary @EmployeeID = 1, @NewSalary = 60000.00;
+EXEC sp_UpdateAnnualSalary @EmployeeID = 1, @NewSalary = -50000.00;
+EXEC sp_DeleteEmployee @EmployeeID = 1;
+EXEC sp_UpdateEmployeeJob @EmployeeID = 1, @NewJobID = 2;
+EXEC sp_UpdateEmployeeJob @EmployeeID = 999, @NewJobID = 2;  
+
+
+SELECT rokhande.fn_GetTotalStudentsInCourse(1) AS TotalStudents;
+
+SELECT * FROM Benefits;
